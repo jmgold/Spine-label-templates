@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-04-13T10:24:06 -->
+<!-- 2017-04-14T10:39:13 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="act_ol100wx" columnCount="8" printOrder="Horizontal" pageWidth="612" pageHeight="792" columnWidth="72" leftMargin="18" rightMargin="18" topMargin="18" bottomMargin="18" uuid="1a20e713-0b7e-4474-aaba-d834c95d48a4">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -216,7 +216,7 @@
 				<textElement verticalAlignment="Top">
 					<font fontName="Calibri" size="11" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{callAlphaStart} + ($F{callAlphaStart}.equals("") ? "" : "\n") + $F{callNumericAll} + ($F{callNumericAll}.equals("") ? "" : "\n")  + $F{callEndCR} + ($F{callEndCR}.equals("") ? "" : "\n")  + $F{itemv}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{callEntireCR}.replaceAll(" ", "\n") + $F{itemv}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
