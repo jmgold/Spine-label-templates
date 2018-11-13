@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2018-11-09T10:42:49 -->
+<!-- 2018-11-13T08:57:13 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="act_ol100wx" columnCount="7" printOrder="Horizontal" pageWidth="612" pageHeight="792" columnWidth="70" columnSpacing="9" leftMargin="27" rightMargin="27" topMargin="18" bottomMargin="18" uuid="1a20e713-0b7e-4474-aaba-d834c95d48a4">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -210,7 +210,7 @@
 				</reportElement>
 				<box topPadding="3" leftPadding="5" bottomPadding="3" rightPadding="5"/>
 				<textElement>
-					<paragraph lineSpacing="Single"/>
+					<paragraph lineSpacing="Single" leftIndent="9" spacingBefore="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{callEntireCR}.replaceAll(" ", "\n") + $F{itemv}]]></textFieldExpression>
 			</textField>
