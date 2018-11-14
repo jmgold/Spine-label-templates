@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2018-11-13T08:57:13 -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="act_ol100wx" columnCount="7" printOrder="Horizontal" pageWidth="612" pageHeight="792" columnWidth="70" columnSpacing="9" leftMargin="27" rightMargin="27" topMargin="18" bottomMargin="18" uuid="1a20e713-0b7e-4474-aaba-d834c95d48a4">
+<!-- 2018-11-14T09:09:30 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="act_ol100wx" columnCount="7" printOrder="Horizontal" pageWidth="612" pageHeight="792" columnWidth="72" columnSpacing="9" leftMargin="27" rightMargin="27" topMargin="18" bottomMargin="18" uuid="1a20e713-0b7e-4474-aaba-d834c95d48a4">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
 	<property name="ireport.zoom" value="2.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<property name="com.jaspersoft.studio.unit." value="inch"/>
-	<property name="com.jaspersoft.studio.unit.pageHeight" value="inch"/>
-	<property name="com.jaspersoft.studio.unit.pageWidth" value="inch"/>
-	<property name="com.jaspersoft.studio.unit.topMargin" value="inch"/>
-	<property name="com.jaspersoft.studio.unit.bottomMargin" value="inch"/>
-	<property name="com.jaspersoft.studio.unit.leftMargin" value="inch"/>
-	<property name="com.jaspersoft.studio.unit.rightMargin" value="inch"/>
-	<property name="com.jaspersoft.studio.unit.columnWidth" value="inch"/>
-	<property name="com.jaspersoft.studio.unit.columnSpacing" value="inch"/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<import value="net.sf.jasperreports.engine.*"/>
 	<import value="java.util.*"/>
@@ -208,9 +200,9 @@
 				<reportElement x="0" y="0" width="72" height="108" uuid="75c14355-fc0f-4241-991f-773c1f25ad39">
 					<property name="com.jaspersoft.studio.unit.width" value="inch"/>
 				</reportElement>
-				<box topPadding="3" leftPadding="5" bottomPadding="3" rightPadding="5"/>
+				<box topPadding="3" leftPadding="0" bottomPadding="0" rightPadding="0"/>
 				<textElement>
-					<paragraph lineSpacing="Single" leftIndent="9" spacingBefore="0"/>
+					<paragraph lineSpacing="Single" leftIndent="3" spacingBefore="0" tabStopWidth="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{callEntireCR}.replaceAll(" ", "\n") + $F{itemv}]]></textFieldExpression>
 			</textField>
