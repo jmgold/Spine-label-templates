@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2020-02-24T15:49:46 -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="act_ol100wx" columnCount="7" printOrder="Horizontal" pageWidth="612" pageHeight="792" columnWidth="71" columnSpacing="9" leftMargin="31" rightMargin="27" topMargin="18" bottomMargin="0" uuid="60eb0e1c-e914-4cad-8749-11afc112361b">
+<!-- 2020-02-27T10:57:09 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="act_ol100wx" columnCount="7" printOrder="Horizontal" pageWidth="612" pageHeight="792" columnWidth="73" columnSpacing="7" leftMargin="31" rightMargin="27" topMargin="18" bottomMargin="0" whenResourceMissingType="Error" uuid="60eb0e1c-e914-4cad-8749-11afc112361b">
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
 	<property name="ireport.zoom" value="2.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
 	<import value="net.sf.jasperreports.engine.*"/>
 	<import value="java.util.*"/>
 	<import value="net.sf.jasperreports.engine.data.*"/>
@@ -191,9 +200,9 @@
 		<band splitType="Stretch"/>
 	</columnHeader>
 	<detail>
-		<band height="63" splitType="Stretch">
+		<band height="56" splitType="Stretch">
 			<textField isBlankWhenNull="false">
-				<reportElement key="textField" x="2" y="10" width="68" height="53" uuid="c506131e-c626-47a0-8fa9-dd307147c1ea">
+				<reportElement key="textField" x="10" y="10" width="60" height="46" uuid="c506131e-c626-47a0-8fa9-dd307147c1ea">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
@@ -208,7 +217,7 @@
 				<textElement verticalAlignment="Top">
 					<font fontName="Times New Roman" size="11" isBold="false"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{callAlphaStart}.replaceAll("," , "").replaceAll(".", "") + ($F{callAlphaStart}.equals("") ? "" : "\n") + $F{callNumericStart} + ($F{callNumericStart}.equals("") ? "" : "\n") + $F{callNumericAfterDec} + ($F{callNumericAfterDec}.equals("") ? "" : "\n")  + $F{callEndCR}.replaceAll("," , "").replaceAll(".", "") + ($F{callEndCR}.equals("") ? "" : "\n")  + $F{callSubbCR}.replaceAll("," , "").replaceAll(".", "") + ($F{callSubbCR}.equals("") ? "" : "\n") + $F{itemv}.replaceAll("," , "").replaceAll(".", "")]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{callAlphaStart}.replaceAll("," , "").replaceAll(".", "") + ($F{callAlphaStart}.equals("") ? "" : "\n") + $F{callNumericStart} + ($F{callNumericStart}.equals("") ? "" : "\n") + $F{callNumericAfterDec} + ($F{callNumericAfterDec}.equals("") ? "" : "\n")  + $F{callEndCR} + ($F{callEndCR}.equals("") ? "" : "\n")  + $F{callSubbCR} + ($F{callSubbCR}.equals("") ? "" : "\n") + $F{itemv}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
